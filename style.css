@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+html, body {
+    height: 100%; /* Ensure the body takes up the full height of the viewport */
+    margin: 0; /* Remove default margin */
+}
+
+body {
+    display: flex; /* Use flexbox on the body */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-image: url('jake-weirick-Q_RBVFFXR_g-unsplash.jpg'); /* Set a background image */
+    background-size: cover; /* Ensure the background image covers the entire page */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribute space evenly */
+    align-items: center;
+    width: 40vh;
+    max-height: 90vh; /* Ensure the container doesn't exceed the viewport height */
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for better visibility */
+    overflow: hidden; /* Ensure content stays inside the container */
+}
+
+.location {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.location input {
+    height: 6vh;
+    width: calc(100% - 8vh); /* Adjust width to fit the button */
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    padding: 0 1rem;
+    color: black;
+    background-color: #9ceaef;
+    border: 1px solid #ccc;
+}
+
+.location button {
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    background-color: #9ceaef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+}
+
+.location button:hover {
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+}
+
+.imageWeather {
+    width: 25vh;
+    height: 25vh;
+    margin-bottom: 1rem;
+}
+
+.info {
+    font-weight: 800;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    background-color: blanchedalmond;
+    border-radius: 0.5rem;
+    width: 100%;
+    padding: 1rem; /* Added padding for better spacing */
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+.humid, .wind {
+    text-align: center;
+    width: 45%; /* Adjust width to fit both elements */
+}
+
+.humid p, .wind p {
+    margin: 0.5rem 0; /* Added margin for better spacing */
+}

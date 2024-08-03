@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App for Location</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="location">
+            <input type="text" placeholder="City or place">
+            <button class="btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+
+        <img class="imageWeather" src="clear.png" alt="">
+
+        <div class="info">
+            <div class="temp">
+                <p class="temperature">27°F</p>
+                <p class="des">Clear</p>
+            </div>
+        </div>
+
+        <div class="bottom">
+            <div class="humid">
+                <p class="perc">45%</p>
+                <p>Humidity</p>
+            </div>
+            
+            <div class="wind">
+                <p class="speed">125Km/h</p>
+                <p>Wind speed</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
